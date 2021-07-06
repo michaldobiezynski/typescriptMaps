@@ -8,4 +8,7 @@ const company = new Company();
 console.log("user", user);
 console.log("company", company);
 
-google
+new google.maps.Map(document.getElementById("map"), {
+  zoom: 1,
+  center: company.location,
+});
